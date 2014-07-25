@@ -31,8 +31,9 @@ section.list .status {
 .status .left {
     padding-left: 20px;
     padding-top: 10px;
-    max-width: 250px;
-    width: 250px;
+    max-width: 300px;
+    width: 300px;
+    float: left;
 }
 
 .status .left h4 {
@@ -41,9 +42,21 @@ section.list .status {
     font-size: 24px;
     margin: 0;
     padding-top: 10px;
+
 }
 
 .status .right {
-    max-width: 735px;
-    width: 735px;
+    max-width: 625px;
+    width: 625px;
+    float: right;
+    text-align: right;
+    padding-top: 32px;
+}
+
+canvas {
+    vertical-align: middle;
+}
+canvas + input {
+    margin-top: 16px !important;
+    font-size: 12px !important;
 }
