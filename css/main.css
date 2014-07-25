@@ -32,6 +32,10 @@ section.list .status {
     -ms-border-radius: 10px;
 }
 
+section.list .status:hover {
+    cursor: pointer;
+}
+
 .status .left {
     padding-left: 20px;
     padding-top: 10px;
