@@ -36,7 +36,7 @@
         <section class="list">
             <?php foreach($sites as $site) { ?>
 
-            <div class="status" style="background-image: url('<?php echo $_SESSION[$site]->{'img'}; ?>'); background-size: 100%; background-position: center center;" >
+            <div class="status" style="background-image: url('<?php echo $_SESSION[$site]->{'img'}; ?>'); background-size: 100%; background-position: center center;" onclick="parent.location='http://<?php echo $site; ?>'" >
                 <div class="grey">
                     <div class="left">
                         <h4><?php echo $site; ?></h4>
