@@ -39,17 +39,19 @@
             <?php foreach($sites as $site) { ?>
 
             <div class="status" style="background-image: url('<?php echo $_SESSION[$site]->{'img'}; ?>'); background-size: 100%; background-position: center center;" >
-                <div class="left">
-                    <h4><?php echo $site; ?></h4>
-                    <span><?php echo $_SESSION[$site]->{'ip'}; ?></span>
-                </div>
-                <div class="right">
-                    Uptime: <span id="uptime"><?php echo $_SESSION[$site]->{'uptime'}; ?></span>&emsp;
-                    Disk usage: <input id="k-disk" value="<?php echo $_SESSION[$site]->{'disk'}; ?>">&emsp;
-                    Memory: <input id="k-memory" value="<?php echo $_SESSION[$site]->{'memory'}; ?>">&emsp;
-                    <?php if($_SESSION[$site]->{'swap_total'} !== "0") { ?>
-                        Swap: <input id="k-swap" value="<?php echo $_SESSION[$site]->{'swap'}; ?>">&emsp;
-                    <?php } ?>
+                <div class="grey">
+                    <div class="left">
+                        <h4><?php echo $site; ?></h4>
+                        <span><?php echo $_SESSION[$site]->{'ip'}; ?></span>
+                    </div>
+                    <div class="right">
+                        Uptime: <span id="uptime"><?php echo $_SESSION[$site]->{'uptime'}; ?></span>&emsp;
+                        Disk usage: <input id="k-disk" value="<?php echo $_SESSION[$site]->{'disk'}; ?>">&emsp;
+                        Memory: <input id="k-memory" value="<?php echo $_SESSION[$site]->{'memory'}; ?>">&emsp;
+                        <?php if($_SESSION[$site]->{'swap_total'} !== "0") { ?>
+                            Swap: <input id="k-swap" value="<?php echo $_SESSION[$site]->{'swap'}; ?>">&emsp;
+                        <?php } ?>
+                    </div>
                 </div>
             </div>
 

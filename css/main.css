@@ -26,6 +26,9 @@ section.list .status {
     height: 100px;
     width: 985px;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
 }
 
 .status .left {
@@ -51,6 +54,16 @@ section.list .status {
     float: right;
     text-align: right;
     padding-top: 32px;
+}
+
+.grey {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7));
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
 }
 
 canvas {
