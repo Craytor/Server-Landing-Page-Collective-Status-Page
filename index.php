@@ -26,8 +26,6 @@
                     bgColor: 'rgba(127,127,127,0.15)', // 50% grey with a low opacity, should work with most backgrounds
                     fgColor: '#ccc'
                 });
-                // Start AJAX update loop
-                update();
             });
         </script>
     </head>
@@ -51,6 +49,7 @@
                         <?php if($_SESSION[$site]->{'swap_total'} !== "0") { ?>
                             Swap: <input id="k-swap" value="<?php echo $_SESSION[$site]->{'swap'}; ?>">&emsp;
                         <?php } ?>
+                        CPU: <input id="k-cpu" value="<?php echo $_SESSION[$site]->{'cpu'}; ?>">&emsp;
                     </div>
                 </div>
             </div>
