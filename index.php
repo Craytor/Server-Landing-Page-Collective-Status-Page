@@ -41,7 +41,7 @@
                         $server.find('.k-disk').val(data.disk).trigger("change");
                         $server.find('.k-cpu').val(data.cpu).trigger("change");
                         $server.find('.k-memory').val(data.memory).trigger("change");
-                        if(data.swap_total) {
+                        if(data.swap_total !== "0") {
                             $server.find('.k-swap').val(data.swap).trigger("change");
                         } else {
                             $server.find('.swap').hide();
